@@ -1,0 +1,16 @@
+{
+     "passes": {
+      "AtmosphericsPass": "ATMOSPHEREPASS",
+      "VolumetricScatteringPass": "VOLUMETRICPASS",
+      "DiscreteIndirectCombinedPass": "INDIRECPASS",
+      "DirectionalEmissiveCombinedPass": "EMISSIVEPASS",
+      "Fallback": "FALLBACK"
+    },
+  "file_overwrite": {
+    "default": {
+      "fragment": "fragment.sc",
+      "vertex": "vertex.sc",
+      "varying": "varying.def.sc"
+    }
+  }
+}
