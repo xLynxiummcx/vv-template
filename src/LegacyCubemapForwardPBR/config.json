@@ -1,0 +1,16 @@
+{
+
+"passes": {
+
+"ForwardPBRTransparent": "SKY",
+"ForwardPBRTransparentSkyProbe": "SKYPROBE"
+},
+"file_overwrite": {
+"default": {
+"fragment": "fragment.sc",
+"vertex": "vertex.sc",
+"varying": "varying.def.sc"
+}
+}
+}
+
