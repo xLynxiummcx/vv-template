@@ -9,5 +9,6 @@ SAMPLER2D_AUTOREG(s_RasterizedColor);
 
 void main() {
     vec2 uv = v_texcoord0.xy;
-    vec3 color = texture2D(s_ColorTexture,uv).RGB; gl_FragColor = vec4(color, 1.0);
+    vec3 color = texture2D(s_ColorTexture,uv).rgb; 
+    gl_FragColor = vec4(color, 1.0);
 }
