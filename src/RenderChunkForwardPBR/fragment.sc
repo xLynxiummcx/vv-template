@@ -12,7 +12,7 @@ void main(){
     vec4 diffuse = texture2D(s_MatTexture, v_texcoord0);
 
     diffuse.rgb *= v_color0;
-    diffuse.rgb *= v_lightmapUV;
+   // diffuse.rgb *= v_lightmapUV;
 
         
         vec3 worldPosition = v_worldPos;
