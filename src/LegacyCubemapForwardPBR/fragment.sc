@@ -22,6 +22,6 @@ void main()
     highp vec4 matColor = texture2D(s_MatTexture, v_texcoord0);
 
 
-    outColot = matColor;
+    outColor = matColor;
     gl_FragColor = outColor;
 }
