@@ -1,0 +1,27 @@
+{
+  "macro_overwrite": {
+    "flags": {
+      "Instancing": {
+        "On": "INSTANCING",
+        "Off": []
+      },
+      "RenderAsBillboards": {
+        "On": "RENDER_AS_BILLBOARDS",
+        "Off": []
+      }
+    },
+    "passes": {
+      "GeometryPrepassAlphaTest": "GEOMETRYALPHA",
+      "GeometryPrepass": "GEOMETRYPREEPASS",
+      "DepthOnlyOpaque": "DEPTONLYOPAGUE",
+      "DepthOnly": "DEPTHONLY"
+    }
+  },
+  "file_overwrite": {
+    "default": {
+      "fragment": "fragment.sc",
+      "vertex": "vertex.sc",
+      "varying": "varying.def.sc"
+    }
+  }
+}
