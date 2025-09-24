@@ -8,7 +8,7 @@ void main() {
 
   vec4 pos = vec4(a_position, 1.0);
 
-vec2 clipPos = (pos.xy * 2.0) - vec2(1.0);
+vec2 clipPos = (pos.xy * 2.0) - vec2_splat(1.0);
 
 
 vec2 remappedPos = (a_position.xy * 2.0) - vec2_splat(1.0);
