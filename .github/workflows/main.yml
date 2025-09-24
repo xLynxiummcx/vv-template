@@ -1,0 +1,39 @@
+name: Manual Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Run setup.sh
+        shell: bash
+        run: ./setup.sh
+
+      - name: Run build.sh
+        shell: bash
+        run: ./build.sh
+
+      - name: Upload material.bin files (excluding gameshadersrc)
+        shell: bash
+        run: |
+          mkdir -p upload_temp
+          # find all files containing "material.bin" but exclude gameshadersrc/
+          find . -type f -name '*material.bin*' ! -path './gameshadersrc/*' -exec cp --parents {} upload_temp/ \;
+        continue-on-error: false
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: material-files
+          path: upload_temp/**
