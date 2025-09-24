@@ -1,0 +1,10 @@
+{
+  "file_overwrite": {
+    "default": {
+      "fragment": "fragment.sc",
+      "vertex": "vertex.sc",
+      "varying": "varying.def.sc",
+      "compute": "compute.sc"
+    }
+  }
+}
