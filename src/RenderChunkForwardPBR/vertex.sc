@@ -1,5 +1,5 @@
 $input a_color0, a_position, a_texcoord0, a_texcoord1
-#ifdef INSTANCING__ON
+#ifdef INSTANCING
 $input i_data1, i_data2, i_data3
 #endif
 $output v_color0, v_fog, v_lightmapUV, v_texcoord0, v_worldPos
