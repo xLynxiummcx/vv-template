@@ -23,5 +23,7 @@ void main()
     v_worldPos    = worldPos.xyz;
 
     // Final vertex position
-    gl_Position = clipPos;
+    vec4 vertexpos = mul(u_viewProj ,vec4(worldPos.xyz, 1.0));
+       
+    gl_Position = vertexpos;
 }

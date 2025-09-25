@@ -63,5 +63,5 @@ SAMPLER2D_AUTOREG(s_Normal);
 void main() {
     vec2 uv = v_texcoord0.xy;
     vec3 color = texture2D(s_ColorMetalnessSubsurface,uv).rgb;  
-    gl_FragColor = vec4(color, 1.0);
+    gl_FragColor = vec4(color, 0.0);
 }
